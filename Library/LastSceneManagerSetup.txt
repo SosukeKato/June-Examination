@@ -1,9 +1,9 @@
 sceneSetups:
-- path: Assets/_WorkSpace/Scene/PlayScene.unity
+- path: Assets/_WorkSpace/Scene/TitleScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/_WorkSpace/Scene/TitleScene.unity
+- path: Assets/_WorkSpace/Scene/PlayScene.unity
   isLoaded: 1
   isActive: 0
   isSubScene: 0
