@@ -608,7 +608,8 @@ PrefabInstance:
       value: EnemyCube(3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6108396780662265827, guid: 87b8fa96ae0ff6b4e836bad3e4f84886, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8fa96ae0ff6b4e836bad3e4f84886, type: 3}
@@ -737,7 +738,8 @@ PrefabInstance:
       value: EnemyCube(2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6108396780662265827, guid: 87b8fa96ae0ff6b4e836bad3e4f84886, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8fa96ae0ff6b4e836bad3e4f84886, type: 3}
