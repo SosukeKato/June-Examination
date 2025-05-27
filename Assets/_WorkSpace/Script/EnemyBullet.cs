@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody))]
 public class EnemyBullet : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -16,9 +18,9 @@ public class EnemyBullet : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.CompareTag("PlayerWall"))
+        if(collision.CompareTag("PlayerWall"))
         {
             Destroy(gameObject);
         }

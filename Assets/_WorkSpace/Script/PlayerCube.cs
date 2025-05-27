@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerCube : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,7 +17,7 @@ public class PlayerCube : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.CompareTag("EnemyBullet"))
         {
