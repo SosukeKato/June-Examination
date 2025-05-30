@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_WorkSpace/Scene/TitleScene.unity
     guid: 588cb10c7d845c84b84df53a3cacd495
   - enabled: 1
+    path: Assets/_WorkSpace/Scene/TutorialScene.unity
+    guid: a166bdbb6df88f24baadb742969514d6
+  - enabled: 1
     path: Assets/_WorkSpace/Scene/PlayScene.unity
     guid: 53a2fd8ae1fa0cd48860b28fde70d29e
   - enabled: 1
