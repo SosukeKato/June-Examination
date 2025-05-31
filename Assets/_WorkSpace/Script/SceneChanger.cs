@@ -6,7 +6,7 @@ public class SceneChanger : MonoBehaviour
 {
 
     public void ChanegeScene(string StageName)
-    {   
+    {
         SceneManager.LoadScene(StageName);
     }
 }
