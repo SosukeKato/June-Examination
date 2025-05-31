@@ -501,6 +501,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654619148}
+  - component: {fileID: 654619151}
+  - component: {fileID: 654619150}
+  - component: {fileID: 654619149}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -531,6 +534,68 @@ Transform:
   - {fileID: 818029524}
   m_Father: {fileID: 164413223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &654619149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654619147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e088e90e7aad0de4fabc21a631cc9a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _EnemyBulletPrefab: {fileID: 7983651034376763263, guid: 1fa87f4685784334ca1ae1e2efe08a9c, type: 3}
+  _AttackInterval: 0
+  _Muzzle:
+  - {fileID: 1063617164}
+  - {fileID: 420978157}
+  - {fileID: 1309447259}
+  - {fileID: 44942240}
+  - {fileID: 600875150}
+  - {fileID: 468288684}
+  - {fileID: 792492603}
+  - {fileID: 818029524}
+--- !u!114 &654619150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654619147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd4d353d929d4aa8595e8dfbd8bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &654619151
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654619147}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &760736994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5057010887653761427, guid: 87b8fa96ae0ff6b4e836bad3e4f84886, type: 3}
