@@ -7,8 +7,6 @@ public class BulletAim : MonoBehaviour
 {
     [SerializeField]
     private float _MoveSpeed = 1f;
-
-    private Transform _player;
     // Start is called before the first frame update
     void Start()
     {
