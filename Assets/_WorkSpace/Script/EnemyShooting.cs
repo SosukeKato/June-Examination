@@ -10,6 +10,7 @@ public class EnemyShooting : MonoBehaviour
     private float _AttackInterval = 2f;
     [SerializeField]
     private List<Transform> _Muzzle;
+
     private float _timer;
     // Update is called once per frame
     void Update()
