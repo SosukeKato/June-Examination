@@ -20,8 +20,7 @@ public class EnemyShooting : MonoBehaviour
         if (_timer >= _AttackInterval)
         {
             int r = Random.Range(0, _Muzzle.Count);
-            Instantiate(_EnemyBulletPrefab, _Muzzle[r].position, Quaternion.identity);
-            _timer = 0f;
+            Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
         }
     }
 }
