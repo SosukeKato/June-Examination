@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyBulletPrefab: {fileID: 7983651034376763263, guid: 1fa87f4685784334ca1ae1e2efe08a9c, type: 3}
-  _AttackInterval: 0.01
+  _AttackInterval: 2
   _Muzzle:
   - {fileID: 1063617164}
   - {fileID: 420978157}
