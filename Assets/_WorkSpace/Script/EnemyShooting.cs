@@ -21,6 +21,7 @@ public class EnemyShooting : MonoBehaviour
         {
             int r = Random.Range(0, _Muzzle.Count);
             Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
+            _timer = 0;
         }
     }
 }
