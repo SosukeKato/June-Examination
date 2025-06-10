@@ -38,5 +38,7 @@ public class PlayTimer : MonoBehaviour
             //Žž‚ð‚Pƒvƒ‰ƒX‚·‚é
             hour++;
         }
+
+        dateTimeText.text = hour.ToString("00") + ":" + min.ToString("00") + ":" + ((int)sec).ToString("00");
     }
 }
