@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
@@ -12,6 +13,7 @@ public class EnemyShooting : MonoBehaviour
     private List<Transform> _Muzzle;
 
     private float _timer;
+    int r;
     // Update is called once per frame
     void Update()
     {
@@ -19,8 +21,9 @@ public class EnemyShooting : MonoBehaviour
 
         if (_timer >= _AttackInterval)
         {
-            int r = Random.Range(0, _Muzzle.Count);
-            Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
+             r = Random.Range(0, _Muzzle.Count);
+            GameObject obj = Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
+            obj.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
             _timer = 0;
         }
     }
