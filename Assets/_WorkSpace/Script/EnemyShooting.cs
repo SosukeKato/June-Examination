@@ -8,7 +8,7 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField]
     private GameObject _EnemyBulletPrefab;
     [SerializeField]
-    private float _AttackInterval = 2f;
+    private float _AttackInterval = 0.5f;
     [SerializeField]
     private List<Transform> _Muzzle;
 
@@ -21,7 +21,7 @@ public class EnemyShooting : MonoBehaviour
 
         if (_timer >= _AttackInterval)
         {
-             r = Random.Range(0, _Muzzle.Count);
+            r = Random.Range(0, _Muzzle.Count);
             GameObject obj = Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
             obj.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
             _timer = 0;
