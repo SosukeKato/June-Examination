@@ -23,7 +23,7 @@ public class EnemyShooting : MonoBehaviour
         {
             r = Random.Range(0, _Muzzle.Count);
             GameObject obj = Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
-            obj.GetComponent<Rigidbody>().AddForce(_Muzzle[r].transform.forward * 1000);
+            obj.GetComponent<Rigidbody>().AddForce(_Muzzle[r].transform.forward * 500);
             _timer = 0;
         }
     }
