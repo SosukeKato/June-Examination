@@ -14,13 +14,4 @@ public class PlayerCube : MonoBehaviour
         }
         SceneManager.LoadScene("GameOverScene");
     }
-    /*
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("EnemyBullet"))
-        {
-            Destroy(gameObject);
-        }
-    }
-    */
 }
