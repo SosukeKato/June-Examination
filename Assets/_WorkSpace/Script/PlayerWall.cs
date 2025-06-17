@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerWall : MonoBehaviour
@@ -47,22 +44,5 @@ public class PlayerWall : MonoBehaviour
         {
             _tr.position = new Vector3(1, 0, 1);
         }
-        
-
-
-
-
-        /*
-        string KeyName;
-
-        KeyName = Input.GetKey(KeyCode);
-
-        switch(KeyName)
-        {
-            case "(.Keypad1)":
-                _tr.position = new Vector3(-1, 0, -1);
-                break;
-        }
-        */
     }
 }
