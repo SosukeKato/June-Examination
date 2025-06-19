@@ -7,7 +7,7 @@ public class SceneChanger : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Keypad5))
+        if(Input.anyKeyDown)
         {
             SceneManager.LoadScene(_StageName);
         }
