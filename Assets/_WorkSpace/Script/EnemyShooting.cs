@@ -5,20 +5,21 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _EnemyBulletPrefab;
+    GameObject _EnemyBulletPrefab;
     [SerializeField]
-    private List<Transform> _Muzzle;
+    List<Transform> _Muzzle;
 
-    private float _AttackInterval = 1f;
-    private int _AttackSpeed = 200;
+    float _AttackInterval = 1f;
+    int _AttackSpeed = 200;
 
-    private float _timer;
+    float _timer;
     int r;
+    GameObject obj;
 
-    private void Start()
+    void Start()
     {
-        StartCoroutine("ShootingTimer");
-        StartCoroutine("ShootingTimer2");
+        StartCoroutine(ShootingTimer(60,0.7f,300));
+        StartCoroutine(ShootingTimer(120, 0.5f, 500));
     }
 
     // Update is called once per frame
@@ -29,22 +30,23 @@ public class EnemyShooting : MonoBehaviour
         if (_timer >= _AttackInterval)
         {
             r = Random.Range(0, _Muzzle.Count);
-            GameObject obj = Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
-            obj.GetComponent<Rigidbody>().AddForce(_Muzzle[r].transform.forward * _AttackSpeed);
+            obj = Instantiate(_EnemyBulletPrefab, _Muzzle[r].position,Quaternion.identity);
+            obj.GetComponent<Rigidbody>().AddForce(_Muzzle[r].forward * _AttackSpeed);
             _timer = 0;
         }
+
     }
 
-    IEnumerator ShootingTimer()
+    IEnumerator ShootingTimer(int Wait , float Interval, int Speed)
     {
-        yield return new WaitForSeconds(60);
-        _AttackInterval = 0.7f;
-        _AttackSpeed = 300;
+        yield return new WaitForSeconds(Wait);
+        _AttackInterval = Interval;
+        _AttackSpeed = Speed;
     }
-    IEnumerator ShootingTimer2()
-    {
-        yield return new WaitForSeconds(120);
-        _AttackInterval = 0.5f;
-        _AttackSpeed = 500;
-    }
+    //IEnumerator ShootingTimer2()
+    //{
+    //    yield return new WaitForSeconds(120);
+    //    _AttackInterval = 0.5f;
+    //    _AttackSpeed = 500;
+    //}
 }

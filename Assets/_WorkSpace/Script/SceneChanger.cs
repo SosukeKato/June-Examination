@@ -1,4 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
@@ -6,7 +5,7 @@ public class SceneChanger : MonoBehaviour
     [SerializeField]
     string _StageName;
 
-    private void Update()
+    void Update()
     {
         if(Input.GetKeyDown(KeyCode.Keypad5))
         {

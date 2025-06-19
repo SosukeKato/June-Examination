@@ -3,8 +3,8 @@ using TMPro;
 
 public class PlayTimer : MonoBehaviour
 {
-    private float sec;
-    private float min;
+    float sec;
+    float min;
 
     [SerializeField]
     TextMeshProUGUI dateTimeText;
@@ -20,14 +20,14 @@ public class PlayTimer : MonoBehaviour
             sec = 0;
             //•ª‚ð‚Pƒvƒ‰ƒX‚·‚é
             min++;
-        }
-        //•ª‚ª60‚ð‰z‚µ‚½‚ç
-        if (min >= 60)
-        {
-            //•ª‚ð‚O‚É‚·‚é
-            min = 0;
-        }
 
+            //•ª‚ª60‚ð‰z‚µ‚½‚ç
+            if (min >= 60)
+            {
+                //•ª‚ð‚O‚É‚·‚é
+                min = 0;
+            }
+        }
         dateTimeText.text = min.ToString("00") + ":" + ((int)sec).ToString("00");
     }
 }
