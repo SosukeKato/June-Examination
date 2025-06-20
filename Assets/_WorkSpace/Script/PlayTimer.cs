@@ -22,6 +22,6 @@ public class PlayTimer : MonoBehaviour
             //•ª‚ð‚Pƒvƒ‰ƒX‚·‚é
             min++;
         }
-        dateTimeText.text = min.ToString("00") + ":" + ((int)sec).ToString("00");
+        dateTimeText.text = min.ToString("00") + ":" + sec.ToString("00");
     }
 }
