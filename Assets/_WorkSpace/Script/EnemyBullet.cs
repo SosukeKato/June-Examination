@@ -19,7 +19,7 @@ public class EnemyBullet : MonoBehaviour
 
         if (collision.gameObject.CompareTag("TutorialCube"))
         {
-            
+            Destroy(gameObject);
         }
     }
 }
