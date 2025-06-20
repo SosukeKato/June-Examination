@@ -16,5 +16,10 @@ public class EnemyBullet : MonoBehaviour
         {
             SceneManager.LoadScene("GameOverScene");
         }
+
+        if (collision.gameObject.CompareTag("TutorialCube"))
+        {
+            
+        }
     }
 }

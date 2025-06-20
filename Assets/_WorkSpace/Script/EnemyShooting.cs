@@ -43,10 +43,4 @@ public class EnemyShooting : MonoBehaviour
         _AttackInterval = Interval;
         _AttackSpeed = Speed;
     }
-    //IEnumerator ShootingTimer2()
-    //{
-    //    yield return new WaitForSeconds(120);
-    //    _AttackInterval = 0.5f;
-    //    _AttackSpeed = 500;
-    //}
 }
