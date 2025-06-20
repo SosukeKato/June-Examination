@@ -702,7 +702,6 @@ GameObject:
   m_Component:
   - component: {fileID: 654619148}
   - component: {fileID: 654619151}
-  - component: {fileID: 654619150}
   - component: {fileID: 654619149}
   m_Layer: 0
   m_Name: EnemyShooting
@@ -756,18 +755,6 @@ MonoBehaviour:
   - {fileID: 468288684}
   - {fileID: 792492603}
   - {fileID: 818029524}
---- !u!114 &654619150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654619147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd4d353d929d4aa8595e8dfbd8bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &654619151
 Rigidbody:
   m_ObjectHideFlags: 0
