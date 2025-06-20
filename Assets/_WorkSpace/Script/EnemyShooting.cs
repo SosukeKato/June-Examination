@@ -18,7 +18,7 @@ public class EnemyShooting : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(ShootingTimer(60,0.7f,300));
+        StartCoroutine(ShootingTimer(60, 0.7f, 300));
         StartCoroutine(ShootingTimer(120, 0.5f, 500));
     }
 

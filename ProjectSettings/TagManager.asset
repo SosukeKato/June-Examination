@@ -6,7 +6,6 @@ TagManager:
   tags:
   - PlayerWall
   - EnemyBullet
-  - TutorialCube
   layers:
   - Default
   - TransparentFX

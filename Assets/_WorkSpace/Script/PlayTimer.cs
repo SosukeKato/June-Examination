@@ -9,7 +9,7 @@ public class PlayTimer : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI dateTimeText;
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //タイマースタート
         sec += Time.deltaTime;
@@ -20,13 +20,6 @@ public class PlayTimer : MonoBehaviour
             sec = 0;
             //分を１プラスする
             min++;
-
-            //分が60を越したら
-            if (min >= 60)
-            {
-                //分を０にする
-                min = 0;
-            }
         }
         dateTimeText.text = min.ToString("00") + ":" + ((int)sec).ToString("00");
     }
