@@ -45,4 +45,12 @@ public class PlayerWall : MonoBehaviour
             _tr.position = new Vector3(1, 0, 1);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
 }

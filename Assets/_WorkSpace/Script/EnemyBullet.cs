@@ -15,7 +15,6 @@ public class EnemyBullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("GameOverScene");
-            GetComponent<AudioSource>().Play();
         }
     }
 }
